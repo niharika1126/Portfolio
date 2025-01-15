@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #2c2c2c;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+h1{
+  margin-top:250px;
+  text-align: margin-left;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000; /* Ensuring it is on top */
+}
+
+.navbar-toggler {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #444;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensuring it is on top */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: #575757;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    height: 50px; /* Reduce height for tablets */
+  }
+
+  .navbar-toggler {
+    padding: 6px 10px;
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    right: auto;
+    left: 10px;
+    width: 90%; /* Decrease width */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 40px; /* Further reduce height for mobile devices */
+  }
+
+  .navbar-links {
+    width: 85%; /* Further decrease width */
+    left: 5%; /* Center the navbar */
+    padding: 10px 15px; /* Adjust padding */
+  }
+}
+
+/* Contact Section Styling */
+.contact-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: left;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 2rem; /* Default size */
+  color: #007bff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .contact-section {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .contact-section h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .contact-section h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .contact-section h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .contact-section h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-form button.submit-btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-section {
+    width: 95%;
+    margin: 50px auto;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    padding: 6px 10px;
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    right: auto;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form button.submit-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-links {
+    width: 100%;
+    left: 0;
+  }
+}
+
+h1 {
+  font-size: 2rem; /* Default size */
+  margin-top: 100px;
+}
+
+/* Smallest screen sizes (extra small devices) */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (up to 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 3px;
+  }
+}
+
+/* Medium devices (up to 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablets and small desktops (up to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

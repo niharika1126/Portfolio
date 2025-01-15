@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 60px; /* Default padding for navbar height */
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .navbar-toggler {
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar-links {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            background-color: #444;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .navbar-links a:hover {
+            background-color: #575757;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-links {
+                display: none;
+            }
+        }
+
+       
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Responsive styles for the sidebar and navbar */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 10px 0;
+            }
+
+            .sidebar::before {
+                display: none; /* Hide the vertical line on smaller screens */
+            }
+
+            .circle {
+                width: 15px;
+                height: 15px;
+                margin: 0 10px;
+                position: static; /* Default positioning */
+                transform: none;
+            }
+
+            .main {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+
+     body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 70px;
+        }
+     .resume-section {
+            background-color: #1a1a1a;
+            margin-top: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            width: 70vw;
+            margin :0 auto;
+            border-bottom: 3px solid #007BFF
+        }
+      h2{
+         border-bottom: 3px solid #007BFF;
+      }
+        .resume-heading {
+            color: #00aaff;
+            text-align: margin-left;
+            font-size: 2em;
+            margin-top: 70px;
+            margin-bottom: 10px;
+            
+        }
+
+        .resume-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+           
+        }
+
+        .resume-content h3 {
+            color: #00aaff;
+            margin-bottom: 5px;
+            
+        }
+
+        .resume-content p, .resume-content li {
+            color: #cccccc;
+
+        }
+
+        .resume-content a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        .resume-content a:hover {
+            text-decoration: underline;
+        }
+
+
+   @media (max-width: 768px) {
+            .resume-section {
+                padding: 15px;
+            }
+
+            .resume-heading {
+                font-size: 1.5em;
+            }
+
+            .resume-content h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+  </style>
+</head>
+<body>
+
+     <nav class="navbar">
+        <button class="navbar-toggler" onclick="toggleNavbar()">☰</button>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="index.html">Home</a>
+            <a href="About.html">About Me</a>
+            <a href="Skill.html">Skills</a>
+            <a href="Project.html">Projects</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Achievement.html">Achievements</a>
+            <a href="Internship.html">Internships</a>
+            <a href="Contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+  <section class="resume-section">
+    <h1 class="resume-heading">Resume</h1>
+    <div class="resume-content">
+        <section class="contact-info">
+                <h2 class="section-title">Contact Information</h2>
+                <p><strong>Niharika Bhadkare</strong></p>
+                <p>+91 8964955762</p>
+                <p>Portfolio: <a href="https://geeksforgeeks.org/niharika1126">geeksforgeeks.org/niharika1126</a></p>
+                <p>Email: <a href="mailto:bhadkareniharika@gmail.com">bhadkareniharika@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/niharika1126">linkedin.com/in/niharika1126</a></p>
+            </section>
+
+            <section class="objective">
+                <h2 class="section-title">Objective</h2>
+                <p>A problem solver with a passion for web development, aspiring to create meaningful change in society through my technical skills and innovative solutions.</p>
+            </section>
+
+            <section class="skills">
+                <h2 class="section-title">Technical Skills</h2>
+                <p><strong>Programming Languages:</strong> C++, JavaScript</p>
+                <p><strong>Frontend Development:</strong> HTML/CSS, Bootstrap, React.js</p>
+                <p><strong>Backend Development:</strong> Node.js, Express.js, Restful API</p>
+                <p><strong>Databases:</strong> SQL</p>
+                <p><strong>Tools & Techniques:</strong> Sublime Text, Terminal</p>
+                <p><strong>Soft Skills & Languages:</strong> Leadership, Team Spirit, Communication (English & Hindi)</p>
+                <p><strong>Coursework:</strong> DBMS, CN</p>
+            </section>
+
+            <section class="education">
+                <h2 class="section-title">Education</h2>
+                <p>2021–2025 B.Tech in Computer Science from Shri Vaishnav Vidhyapeeth Vishwavidhyalaya Indore</p>
+                <p>2020–2021 12th from Shri Ram Centennial School with 81% marks. </p>
+                <p>2018–2019 10th from SICA Senior Secondary School, with 87.6%.</p>
+            </section>
+
+            <section class="internship">
+        <h2>Internship Experience</h2>
+        <p><strong>Frontend Developer Intern</strong> – Persperence Envision Private Limited, Remote (Jan 2025 – Present)</p>
+        <ul>
+            <li>Collaborated with co-founders to align the project, Edjourn, with the startup’s vision and objectives.</li>
+            <li>Designed and implemented a responsive and SEO-optimized dashboard using React, featuring filtering, sorting, and dynamic data integration through APIs.</li>
+        </ul>
+    </section>
+             <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>EdJourn</h3>
+            <ul>
+                <li>Developed a responsive dashboard to dynamically fetch and display Google Alerts with details like publication date, author name, and journal metadata.</li>
+                <li>Implemented features such as real-time data rendering, advanced search and filtering, pagination, and responsive design.</li>
+                <li><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, Gmail API, Bootstrap, Vanilla CSS.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>S Query</h3>
+            <ul>
+                <li>Built a platform for startups to manage challenges, with mentor-assigned solutions and CRUD functionality.</li>
+                <li><strong>Tech Stack:</strong> Node.js, Express.js, HTML, CSS, JavaScript, RESTful API.</li>
+            </ul>
+        </div>
+    </section>
+
+             <section class="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Internal Finalist - Smart India Hackathon 2023</li>
+            <li>Finalist - Alcheringa, IIT Guwahati Fest 2023, 2024</li>
+            <li>Redesigned EAPMC Website, selected for the interview round.</li>
+            <li>Among the top 7 selected for the HireMe interview round (Excellent Communication and Critical Thinking).</li>
+        </ul>
+    </section>
+
+          <section class="extracurricular">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Public Relations Lead - Ganesh Acharya Shoot</li>
+            <li>Club Member - Nataraj (Official Dance Club)</li>
+            <li>Core Member - Recruitment Committee</li>
+            <li>Growth Manager - Prepinsta</li>
+        </ul>
+    </section>
+    <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>DBMS Certification - IIT Guwahati (NPTEL)</li>
+            <li>Web Development Certification</li>
+        </ul>
+    </section>
+    </div>
+  </section>
+
+   </body>
+    <script>
+        function toggleNavbar() {
+            const navbarLinks = document.getElementById('navbarLinks');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

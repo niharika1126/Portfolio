@@ -1,0 +1,65 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+</head>
+<link rel="stylesheet" href="Project.css">
+<body>
+
+<nav class="navbar"> <button class="navbar-toggler" onclick="toggleNavbar()">☰</button> <div class="navbar-links" id="navbarLinks"> <a href="index.html">Home</a> <a href="About.html">About Me</a> <a href="Skill.html">Skills</a> <a href="Project.html">Projects</a> <a href="Resume.html">Resume</a> <a href="Achievement.html">Achievements</a> <a href="Internship.html">Internships</a> <a href="Contact.html">Contact Me</a> </div> </nav>
+    <!-- Project 1 Card -->
+    <h1> Projects </h1>
+    <br>
+    <div class="internship-card">
+        <div class="card-title">EdJourn</div>
+        <div class="card-description">
+            Built a platform to display real time google alerts data.
+        </div>
+        <ul>
+            <li>Developed a responsive dashboard to dynamically fetch and display Google Alerts with details like publication date, author name, and journal metadata.</li>
+            <li>Implemented features such as real-time data rendering, advanced search and filtering, pagination, and responsive design.</li>
+            <li><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, Gmail API, Bootstrap, Vanilla CSS.</li>
+        </ul>
+        <button class="offer-letter-btn">View Project</button>
+    </div>
+<br>
+    <!-- Project 2 Card -->
+    <div class="internship-card">
+        <div class="card-title">EquityEase</div>
+        <div class="card-description">
+            Built a Zerodha clone that includes a trading dashboard, real-time market data, user authentication, and data management using MongoDB and AWS Amplify for deployment.
+        </div>
+        <ul>
+            <li>Developed a real-time market data dashboard, integrated stock trading functionalities, and managed user data with authentication features.</li>
+            <li>Deployed the application using AWS Amplify, ensuring scalability and security.</li>
+            <li><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, AWS Amplify, Bootstrap, Material-UI.</li>
+        </ul>
+        <button class="offer-letter-btn">View Project</button>
+    </div>
+<br>
+    <!-- Project 3 Card -->
+    <div class="internship-card">
+        <div class="card-title">S Query</div>
+        <div class="card-description">
+            Built a platform for startups to manage challenges, with mentor-assigned solutions and CRUD functionality.
+        </div>
+        <ul>
+            <li>Developed a responsive platform for managing startup challenges with mentor-assigned solutions.</li>
+            <li>Implemented CRUD functionalities and integrated a RESTful API for seamless interaction.</li>
+            <li><strong>Tech Stack:</strong> Node.js, Express.js, HTML, CSS, JavaScript, RESTful API.</li>
+        </ul>
+        <button class="offer-letter-btn">View Project</button>
+    </div>
+</section>
+<script>
+    function toggleNavbar() {
+    const navbarLinks = document.getElementById('navbarLinks');
+    navbarLinks.classList.toggle('active');
+}
+
+    </script>
+
+</body>
+</html>

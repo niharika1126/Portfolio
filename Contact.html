@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Niharika Bhadkare</title>
+  <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+ <nav class="navbar"> <button class="navbar-toggler" onclick="toggleNavbar()">☰</button> <div class="navbar-links" id="navbarLinks"> <a href="index.html">Home</a> <a href="About.html">About Me</a> <a href="Skill.html">Skills</a> <a href="Project.html">Projects</a> <a href="Resume.html">Resume</a> <a href="Achievement.html">Achievements</a> <a href="Internship.html">Internships</a> <a href="Contact.html">Contact Me</a> </div> </nav>
+
+  <!-- Contact Me Section -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <p><strong>Name:</strong> Niharika Bhadkare</p>
+      <p><strong>Phone:</strong> +91 8964955762</p>
+      <p><strong>Email:</strong> <a href="mailto:bhadkareniharika@gmail.com">bhadkareniharika@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/niharika1126" target="_blank">linkedin.com/in/niharika1126</a></p>
+      <p><strong>GeeksforGeeks:</strong> <a href="https://geeksforgeeks.org/niharika1126" target="_blank">geeksforgeeks.org/niharika1126</a></p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+  function toggleNavbar() {
+    const navbarLinks = document.getElementById('navbarLinks');
+    navbarLinks.classList.toggle('active');
+}
+
+
+
+  </script>
+</body>
+</html>

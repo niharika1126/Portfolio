@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Experience</title>
+  <link rel="stylesheet" href="Internship.css">
+</head>
+<body>
+  <nav class="navbar"> <button class="navbar-toggler" onclick="toggleNavbar()">☰</button> <div class="navbar-links" id="navbarLinks"> <a href="index.html">Home</a> <a href="About.html">About Me</a> <a href="Skill.html">Skills</a> <a href="Project.html">Projects</a> <a href="Resume.html">Resume</a> <a href="Achievement.html">Achievements</a> <a href="Internship.html">Internships</a> <a href="Contact.html">Contact Me</a> </div> </nav>
+  <!-- Internship Section -->
+  <section class="internship-section">
+    <h1>Internship Experience</h1>
+
+    <!-- First Internship Card -->
+    <div class="internship-card">
+      <h2>Frontend Developer Intern</h2>
+      <p><strong>Company:</strong> Persperence Envision Private Limited</p>
+      <p><strong>Duration:</strong> January 2025 – Present</p>
+      <p><strong>Location:</strong> Remote</p>
+      <ul>
+        <li>Collaborated with co-founders to align the project, Edjourn, with the startup’s vision and objectives.</li>
+        <li>Designed and implemented a responsive and SEO-optimized dashboard using React, featuring filtering, sorting, and dynamic data integration through APIs.</li>
+      </ul>
+      <button class="offer-letter-btn" onclick="openOfferLetter('Offer.pdf')">View Offer Letter</button>
+    </div>
+
+    <!-- Second Internship Card -->
+    <div class="internship-card">
+      <h2>Team Leader</h2>
+      <p><strong>Event:</strong> Smart India Hackathon 2023</p>
+      <p><strong>Problem Statement:</strong> Effective utilization of industrial plastic and hazardous waste</p>
+       <p><strong>Duration:</strong> October 2023 – Novemebr 2023 </p>
+      <p><strong>Location:</strong> Remote</p>
+      <ul>
+        <li>Led a team to propose and implement innovative solutions for industrial plastic waste management.</li>
+      </ul>
+      <button class="offer-letter-btn" onclick="openOfferLetter('smart_india_hackathon.jpg')">View Offer Letter</button>
+    </div>
+  </section>
+<script>
+
+    // Function to toggle the navbar
+    function toggleNavbar() {
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarLinks.classList.toggle('active');
+    }
+
+    // Function to open the offer letter in a new tab
+    function openOfferLetter(fileName) {
+      // Opens the file in a new tab/window
+      window.open(fileName, '_blank');
+    }
+
+
+</script>
+</body>
+</html>
